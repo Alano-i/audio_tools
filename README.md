@@ -14,8 +14,4 @@ ps: 进入原型后，按 `R` 键可回到原型起点。
 
 <img width="1200" alt="image" src="https://github.com/Alano-i/wecom-notification/assets/68833595/82bfe58b-fdf8-41a3-abe2-6b1f860f3c1a">
 
-<img width="1200" alt="image" src="https://github.com/Alano-i/audio_tools/assets/68833595/fe315df4-631e-4255-abb5-ffb4e8956ff5">
-
-<img width="1036" alt="image" src="https://github.com/Alano-i/audio_tools/assets/68833595/b715aae2-f1dd-4633-9681-f84d58ad9c72">
-<img width="1036" alt="image" src="https://github.com/Alano-i/audio_tools/assets/68833595/a5cc7a19-8fd9-49bd-969e-5d225fc0e674">
 
