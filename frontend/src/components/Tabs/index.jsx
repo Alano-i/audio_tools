@@ -1,18 +1,14 @@
-import { useState, useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 import "./index.css";
 
 const Tabs = ({ tabs, value, onChange }) => {
-  const [selectedTab, setSelectedTab] = useState(
-    value || (tabs.length > 0 ? tabs[0].value : ""),
-  );
   const tabsRef = useRef(null);
-  const tabRefs = useRef([]);
+  const tabRefs = useRef({});
 
-  const updateTabAfter = (index) => {
-    if (!tabsRef.current || index >= tabRefs.current.length || index < 0)
-      return;
+  const updateTabAfter = (value) => {
+    if (!tabsRef.current || !tabRefs.current[value]) return;
 
-    const tab = tabRefs.current[index];
+    const tab = tabRefs.current[value];
     const targetRect = tab.getBoundingClientRect();
     const tabsRect = tabsRef.current.getBoundingClientRect();
 
@@ -26,26 +22,21 @@ const Tabs = ({ tabs, value, onChange }) => {
   };
 
   useEffect(() => {
-    // 默认选中第一项并设置样式
-    if (tabs.length > 0) {
-      updateTabAfter(tabs.findIndex((tab) => tab.value === selectedTab));
-    }
-  }, [selectedTab, tabs]);
+    updateTabAfter(value);
+  }, [value]);
 
-  const handleClick = (tabValue, index) => {
-    setSelectedTab(tabValue);
+  const handleClick = (tabValue) => {
     onChange(tabValue);
-    updateTabAfter(index);
   };
 
   return (
     <div className="tabs" ref={tabsRef}>
-      {tabs.map((tab, index) => (
+      {tabs.map((tab) => (
         <div
           key={tab.value}
-          ref={(el) => (tabRefs.current[index] = el)}
-          className={`tab ${selectedTab === tab.value ? "selected" : ""}`}
-          onClick={() => handleClick(tab.value, index)}
+          ref={(el) => (tabRefs.current[tab.value] = el)}
+          className={`tab ${value === tab.value ? "selected" : ""}`}
+          onClick={() => handleClick(tab.value)}
         >
           {tab.label}
         </div>
