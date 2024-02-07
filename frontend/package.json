@@ -7,7 +7,8 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "prepare": "cd .. && husky frontend/.husky"
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -25,5 +26,10 @@
   },
   "volta": {
     "node": "20.11.0"
+  },
+  "lint-staged": {
+    "**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
+      "npx prettier --write"
+    ]
   }
 }

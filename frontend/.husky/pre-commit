@@ -1,0 +1,3 @@
+echo "🚀 运行 pre-commit"
+npx lint-staged
+echo "🚀 运行 pre-commit 结束"

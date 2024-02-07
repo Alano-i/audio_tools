@@ -1,13 +1,16 @@
-import React, { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 import "./index.css";
 
 const Tabs = ({ tabs, value, onChange }) => {
-  const [selectedTab, setSelectedTab] = useState(value || (tabs.length > 0 ? tabs[0].value : ""));
+  const [selectedTab, setSelectedTab] = useState(
+    value || (tabs.length > 0 ? tabs[0].value : ""),
+  );
   const tabsRef = useRef(null);
   const tabRefs = useRef([]);
 
   const updateTabAfter = (index) => {
-    if (!tabsRef.current || index >= tabRefs.current.length || index < 0) return;
+    if (!tabsRef.current || index >= tabRefs.current.length || index < 0)
+      return;
 
     const tab = tabRefs.current[index];
     const targetRect = tab.getBoundingClientRect();
