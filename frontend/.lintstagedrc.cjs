@@ -1,7 +1,9 @@
 const path = require("path");
 
 const buildEslintCommand = (filenames) =>
-  `npx lint --fix --report-unused-disable-directives --max-warnings ${filenames.join(" ")}`;
+  `npx eslint --fix --report-unused-disable-directives ${filenames
+    .map((f) => path.relative(process.cwd(), f))
+    .join(" ")}`;
 
 module.exports = {
   "*.{cjs,js,jsx,ts,tsx}": [buildEslintCommand],
