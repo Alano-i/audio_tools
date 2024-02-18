@@ -26,7 +26,7 @@ const tabs = [
     href: "/organize",
   },
   {
-    label: "旧版本日志",
+    label: "日志",
     value: "log",
     href: "/log",
   },
