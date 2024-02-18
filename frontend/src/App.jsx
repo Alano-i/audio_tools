@@ -61,9 +61,7 @@ function App() {
   return (
     <Container>
       <Tabs tabs={tabs} value={tab} onChange={onTabChange} />
-      <div>
-        <Suspense fallback={<p>Loading...</p>}>{useRoutes(routes)}</Suspense>
-      </div>
+      <Suspense fallback={<p>Loading...</p>}>{useRoutes(routes)}</Suspense>
     </Container>
   );
 }

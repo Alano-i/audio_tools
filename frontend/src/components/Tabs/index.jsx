@@ -30,12 +30,12 @@ const Tabs = ({ tabs, value, onChange }) => {
   };
 
   return (
-    <div className="tabs" ref={tabsRef}>
+    <div className="my-tabs" ref={tabsRef}>
       {tabs.map((tab) => (
         <div
           key={tab.value}
           ref={(el) => (tabRefs.current[tab.value] = el)}
-          className={`tab ${value === tab.value ? "selected" : ""}`}
+          className={`my-tab ${value === tab.value ? "selected" : ""}`}
           onClick={() => handleClick(tab.value)}
         >
           {tab.label}
