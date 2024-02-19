@@ -35,6 +35,11 @@ const tabs = [
     value: "settings",
     href: "/settings",
   },
+  {
+    label: "主题预览",
+    value: "themePreview",
+    href: "/themePreview",
+  },
 ];
 
 function App() {
