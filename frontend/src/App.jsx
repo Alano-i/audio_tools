@@ -10,11 +10,11 @@ const tabs = [
     value: "podcastSource",
     href: "/podcastSource",
   },
-  {
-    label: "生成",
-    value: "generate",
-    href: "/generate",
-  },
+  // {
+  //   label: "生成",
+  //   value: "generate",
+  //   href: "/generate",
+  // },
   {
     label: "订阅",
     value: "subscribe",
