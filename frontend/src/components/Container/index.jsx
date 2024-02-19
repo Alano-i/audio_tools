@@ -1,7 +1,7 @@
 import "./index.css";
 
 const Container = ({ children }) => {
-	return <div className="container">{children}</div>;
+  return <div className="container">{children}</div>;
 };
 
 export default Container;
