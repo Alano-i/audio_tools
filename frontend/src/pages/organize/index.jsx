@@ -210,7 +210,7 @@ const Index = () => {
                 {/* <span className="label-text-alt">Alt label</span> */}
               </div>
               <textarea
-                className="textarea textarea-bordered h-16 w-full"
+                className="textarea textarea-bordered h-12 w-full"
                 placeholder=""
                 value={podcast_summary}
                 onChange={(e) => set_podcast_summary(e.target.value)}
