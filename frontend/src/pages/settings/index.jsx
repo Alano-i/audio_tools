@@ -47,7 +47,7 @@ const Index = () => {
         <input type="text" placeholder="" className="input input-bordered w-full " />
       </label>
 
-      <div className="mt-8 btn btn-primary">测试设置</div>
+      <div className="mt-4 btn btn-primary">保存</div>
     </div>
   );
 };
