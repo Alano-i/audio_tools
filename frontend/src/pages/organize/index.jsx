@@ -47,7 +47,7 @@ const Index = () => {
       {/* 下拉选择 */}
       <SelectField
         label="选择要执行的操作"
-        options={[{ value: "", label: "请选择要执行的操作" }, ...mainOptions]}
+        options={[{ value: "", label: "请选择要执行的操作", disabled: true }, ...mainOptions]}
         value={formData.selectedMainOption}
         onChange={(e) => handleChange("selectedMainOption", e.target.value)}
       />

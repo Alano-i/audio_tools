@@ -7,8 +7,8 @@ const SelectField = ({ label, options, value, onChange }) => {
         </div>
       )}
       <select className="select select-bordered w-full" value={value} onChange={onChange}>
-        {options.map(({ value, label }) => (
-          <option key={value} value={value}>
+        {options.map(({ value, label, disabled }) => (
+          <option key={value} value={value} disabled={disabled}>
             {label}
           </option>
         ))}
