@@ -10,4 +10,5 @@
 html,
 body {
   height: 100%;
+  width: 100vw; /* 或者设置固定宽度，如 width: 1200px; 避免出现滚动条时页面元素跳动*/
 }
