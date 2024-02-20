@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+/* eslint-disable no-unused-vars */
+import {React, useState } from "react";
 
 const Index = () => {
   const [selectedMainOption, setSelectedMainOption] =
@@ -39,11 +40,11 @@ const Index = () => {
   };
 
   const mainOptions = [
-    { value: "generate_podcast", label: "📕 生成播客源" },
+    { value: "generate_podcast", label: "🎧 生成播客源" },
     { value: "clip_audio", label: "🎹 剪辑音频" },
-    { value: "link_file", label: "🌍 链接文件" },
-    { value: "change_cover", label: "修改封面" },
-    { value: "download_xmly", label: "下载喜马拉雅" },
+    { value: "link_file", label: "🔗 链接文件" },
+    { value: "change_cover", label: "🖼 修改封面" },
+    { value: "download_xmly", label: "⬇️ 下载喜马拉雅" },
   ];
 
   const radioOptions = [
@@ -129,7 +130,6 @@ const Index = () => {
               </div>
             </label>
 
-            <div className="flex gap-4">
             <label className="form-control w-full">
               <div className="label">
                 <span className="w-full label-text text-opacity-50">书名</span>
@@ -143,6 +143,20 @@ const Index = () => {
               />
             </label>
             <label className="form-control w-full">
+              <div className="label">
+                <span className="label-text text-opacity-50">简介</span>
+                {/* <span className="label-text-alt">Alt label</span> */}
+              </div>
+              <textarea
+                className="textarea textarea-bordered h-12 w-full"
+                placeholder=""
+                value={podcast_summary}
+                onChange={(e) => set_podcast_summary(e.target.value)}
+              ></textarea>
+            </label>
+
+            <div className="flex gap-4">
+              <label className="form-control w-full">
                 <div className="label">
                   <span className="w-full label-text text-opacity-50">
                     作者
@@ -156,10 +170,6 @@ const Index = () => {
                   onChange={(e) => set_podcast_author(e.target.value)}
                 />
               </label>
-            </div>
-            <div className="flex gap-4">
-
-
               <label className="form-control w-full">
                 <div className="label">
                   <span className="w-full label-text text-opacity-50">
@@ -174,6 +184,11 @@ const Index = () => {
                   onChange={(e) => set_reader(e.target.value)}
                 />
               </label>
+            </div>
+
+
+
+            <div className="flex gap-4">
               <label className="form-control w-full">
                 <div className="label">
                   <span className="w-full label-text text-opacity-50">
@@ -204,18 +219,7 @@ const Index = () => {
                 />
               </label>
             </div>
-            <label className="form-control w-full">
-              <div className="label">
-                <span className="label-text text-opacity-50">简介</span>
-                {/* <span className="label-text-alt">Alt label</span> */}
-              </div>
-              <textarea
-                className="textarea textarea-bordered h-12 w-full"
-                placeholder=""
-                value={podcast_summary}
-                onChange={(e) => set_podcast_summary(e.target.value)}
-              ></textarea>
-            </label>
+
             <div className="flex gap-4 mb-4 mt-4">
               <label className="cursor-pointer p-0 m-0 label">
                 <input
