@@ -5,9 +5,7 @@
 本应用的前身是集成于 Movie-bot 一款插件，详细请见 [说明文档](https://alano-i.github.io/doc/audio_tools/)
 
 ## Figma 原型
-因我太菜了，不会前端，寻求志同道合的前端大佬React + Tailwind！跟着大佬学习学习，这类UI组件似乎都有自己的主题，能自动切换就好了。
-
-我设计好了 Figma 可交互原型，[请查看](https://www.figma.com/proto/jlbVyZoQoKuFvdQ7BUZaxU/%E6%92%AD%E5%AE%A2?page-id=0%3A1&node-id=1584-1902&starting-point-node-id=1584%3A1902&scaling=min-zoom&mode=design&t=Ix8D9aOMpNTU40eE-1
+已设计好了 Figma 可交互原型，[请查看](https://www.figma.com/proto/jlbVyZoQoKuFvdQ7BUZaxU/%E6%92%AD%E5%AE%A2?page-id=0%3A1&node-id=1584-1902&starting-point-node-id=1584%3A1902&scaling=min-zoom&mode=design&t=Ix8D9aOMpNTU40eE-1
 )
 
 ps: 进入原型后，按 `R` 键可回到原型起点。
@@ -19,3 +17,6 @@ ps: 进入原型后，按 `R` 键可回到原型起点。
 ![2](https://github.com/Alano-i/audio_tools/assets/68833595/7c963ae1-ebaf-4a61-944a-e5bfa7547f9f)
 
 ![3](https://github.com/Alano-i/audio_tools/assets/68833595/01093298-163a-49ae-ba6d-d849038f1aec)
+
+## 请我喝杯咖啡，补充能量！
+<img width="150" alt="image" src="https://user-images.githubusercontent.com/68833595/233236971-e59d4eef-b0af-49ea-9ad7-8c4ce479c623.png">
