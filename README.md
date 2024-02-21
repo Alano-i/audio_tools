@@ -5,7 +5,7 @@
 本应用的前身是集成于 Movie-bot 一款插件，详细请见 [说明文档](https://alano-i.github.io/doc/audio_tools/)
 
 ## 致谢
-感谢 @zkl2333 大佬的付出与帮助！
+感谢 [@zkl2333](https://github.com/zkl2333) 大佬的付出与帮助！
 
 ## Figma 原型
 已设计好了 Figma 可交互原型，[请查看](https://www.figma.com/proto/jlbVyZoQoKuFvdQ7BUZaxU/%E6%92%AD%E5%AE%A2?page-id=0%3A1&node-id=1584-1902&starting-point-node-id=1584%3A1902&scaling=min-zoom&mode=design&t=Ix8D9aOMpNTU40eE-1
