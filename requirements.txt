@@ -1,0 +1,11 @@
+httpx
+httpx[socks]
+fastapi
+uvicorn[standard]
+cacheout
+inject
+ruamel.yaml==0.17.32
+SQLAlchemy
+tenacity
+apscheduler
+dataclasses_json
